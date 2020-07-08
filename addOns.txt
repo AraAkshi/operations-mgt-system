@@ -1,0 +1,23 @@
+salesSelectionMenu.Items.Clear();
+            salesSelectionMenu.Items.Add("Registered Personal");
+            salesSelectionMenu.Items.Add("Registered Company");
+            salesSelectionMenu.Items.Add("Unregistered Personal");
+            salesSelectionMenu.Items.Add("Unregistered Company");
+
+            salesSelectionMenu.Show(btnSales, new Point(5, btnSales.Height));
+
+/*private void RoundButtons(Button myButton)
+        {
+            this.bunifuElipse1.ApplyElipse(myButton, 40);
+        }*/
+		
+ /*static frmHomepage _formObject;
+        public static frmHomepage Instance
+        {
+            get
+            {
+                if (_formObject == null)
+                    _formObject = new frmHomepage();
+                return _formObject;
+            }
+        }*/

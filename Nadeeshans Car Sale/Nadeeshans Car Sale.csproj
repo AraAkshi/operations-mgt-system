@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3181F84-82BE-4448-BC6A-6F3EF91CE0C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nadeeshans_Car_Sale</RootNamespace>
+    <AssemblyName>Nadeeshans Car Sale</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseHandler.cs" />
+    <Compile Include="GlobalLoginData.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfferForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfferForm.Designer.cs">
+      <DependentUpon>OfferForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewUser.Designer.cs">
+      <DependentUpon>viewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowsForm.Designer.cs">
+      <DependentUpon>windowsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucInquiriesForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucInquiriesForm.Designer.cs">
+      <DependentUpon>ucInquiriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSalesRegCompany.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSalesRegCompany.Designer.cs">
+      <DependentUpon>ucSalesRegCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSalesRegPerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSalesRegPerson.Designer.cs">
+      <DependentUpon>ucSalesRegPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSalesUnregCompany.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSalesUnregCompany.Designer.cs">
+      <DependentUpon>ucSalesUnregCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSalesUnregPerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSalesUnregPerson.Designer.cs">
+      <DependentUpon>ucSalesUnregPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSearchCars.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSearchCars.Designer.cs">
+      <DependentUpon>ucSearchCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucCustomerInquiry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCustomerInquiry.Designer.cs">
+      <DependentUpon>ucCustomerInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucInsuranceLuxary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucInsuranceLuxary.Designer.cs">
+      <DependentUpon>ucInsuranceLuxary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPendingPayments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPendingPayments.Designer.cs">
+      <DependentUpon>ucPendingPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPurchaseRegCompany.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPurchaseRegCompany.designer.cs">
+      <DependentUpon>ucPurchaseRegCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPurchaseRegPerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPurchaseRegPerson.designer.cs">
+      <DependentUpon>ucPurchaseRegPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPurchaseUnreg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPurchaseUnreg.designer.cs">
+      <DependentUpon>ucPurchaseUnreg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucRevenueEco.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucRevenueEco.Designer.cs">
+      <DependentUpon>ucRevenueEco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucServiceRenewal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucServiceRenewal.Designer.cs">
+      <DependentUpon>ucServiceRenewal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucVehicleDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucVehicleDetails.Designer.cs">
+      <DependentUpon>ucVehicleDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucVehicleTransfer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucVehicleTransfer.Designer.cs">
+      <DependentUpon>ucVehicleTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewSelectedCar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucViewSelectedCar.designer.cs">
+      <DependentUpon>ucViewSelectedCar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfferForm.resx">
+      <DependentUpon>OfferForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewUser.resx">
+      <DependentUpon>viewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowsForm.resx">
+      <DependentUpon>windowsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucInquiriesForm.resx">
+      <DependentUpon>ucInquiriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSalesRegCompany.resx">
+      <DependentUpon>ucSalesRegCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSalesRegPerson.resx">
+      <DependentUpon>ucSalesRegPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSalesUnregCompany.resx">
+      <DependentUpon>ucSalesUnregCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSalesUnregPerson.resx">
+      <DependentUpon>ucSalesUnregPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSearchCars.resx">
+      <DependentUpon>ucSearchCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ucCustomerInquiry.resx">
+      <DependentUpon>ucCustomerInquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucInsuranceLuxary.resx">
+      <DependentUpon>ucInsuranceLuxary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPendingPayments.resx">
+      <DependentUpon>ucPendingPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPurchaseRegCompany.resx">
+      <DependentUpon>ucPurchaseRegCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPurchaseRegPerson.resx">
+      <DependentUpon>ucPurchaseRegPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPurchaseUnreg.resx">
+      <DependentUpon>ucPurchaseUnreg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucRevenueEco.resx">
+      <DependentUpon>ucRevenueEco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucServiceRenewal.resx">
+      <DependentUpon>ucServiceRenewal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucVehicleDetails.resx">
+      <DependentUpon>ucVehicleDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucVehicleTransfer.resx">
+      <DependentUpon>ucVehicleTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucViewSelectedCar.resx">
+      <DependentUpon>ucViewSelectedCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
